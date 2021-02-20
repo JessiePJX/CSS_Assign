@@ -1,0 +1,407 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow: auto;
+}
+
+.gridcontainer {
+  display: grid;
+  margin: 0 auto;
+  justify-content: center;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+}
+
+.topcontainer {
+  grid-column: span 12;
+}
+
+.hero-image {
+  grid-column: span 12;
+  background-image: url("img/tofu.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 75%;
+}
+
+.hero-text h1 {
+  position: relative;
+  top: 5em;
+  left: 0vw;
+  max-width: 12em;
+  max-height: 25%;
+  background: rgb(64,27,5);
+  background: rgba(64,27,5,0.8);
+  padding-left:4em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  font-family: Ubuntu;
+  font-size: 3.2vw;
+  line-height: 1.4em;
+  letter-spacing: 0.05em;
+  color: #ECE7DE;
+}
+
+h2 {
+  font-family: Ubuntu;
+  font-weight: bold;
+  font-size: 2.6vw;
+  color: #C99F67;
+  margin-top: 2em;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Proxima Nova",sans-serif;
+  font-size: 1.8vw;
+  letter-spacing: 0.05em;
+}
+
+h4 {
+  font-family: "Proxima Nova",sans-serif;
+  font-size: 1.8vw;
+  letter-spacing: 0.05em;
+  padding-top: 1.2vh;
+  text-align: center;
+}
+
+p {
+  font-family: "Proxima Nova",sans-serif;
+  font-size: 1.4vw;
+  letter-spacing: 0.05em;
+  line-height: 1.8em;
+}
+
+.Whatis {
+  grid-column: span 12;
+  text-align: center;
+  padding-top: 4vh;
+  padding-bottom: 0vh;
+  margin-right: 12%;
+  margin-left: 12%;
+}
+
+.Materials {
+  grid-column: span 12;
+  padding-top: 0.5vh;
+}
+
+.boxes {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+ }
+
+.box1 {
+  width: 30%;
+  text-align: right;
+  margin-right: 3vw;
+}
+
+.box2 {
+  width: 30%;
+  text-align:left;
+  margin-left: 3vw;
+}
+
+.vertical-line {
+  border-right: 1px solid rgb(64,27,5);
+  height: 16vw;
+}
+
+.Instruction {
+  grid-column: span 12;
+  margin-right: 12%;
+  margin-left: 12%;
+  padding-top: 0.5vh;
+}
+
+.step1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.image1 {
+  width: 50%;
+  margin-right: 0vw;
+  flex-shrink: 0;
+  padding-top: 0.8vw;
+}
+
+.p1 {
+  width: 50%;
+  padding-left: 3vw;
+  margin: auto;
+}
+
+hr {
+  margin-top: 3vw;
+  border-top: 0.5px solid#ECE7DE 
+   
+}
+
+.step2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.image2 {
+  width: 50%;
+  margin-left: 0vw;
+  flex-shrink: 0;
+  padding-top: 0.8vw;
+}
+
+.p2 {
+  width: 50%;
+  text-align: right;
+  padding-right: 3vw;
+  margin: auto;
+}
+
+.step3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.image3 {
+  width: 50%;
+  margin-right: 0vw;
+  flex-shrink: 0;
+  padding-top: 0.8vw;
+}
+
+.p3 {
+  width: 50%;
+  padding-left: 3vw;
+  margin: auto;
+}
+
+.step4 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.image4 {
+  width: 50%;
+  margin-left: 0vw;
+  flex-shrink: 0;
+  padding-top: 0.8vw;
+}
+
+.p4 {
+  width: 50%;
+  text-align: right;
+  padding-right: 3vw;
+  margin: auto;
+}
+
+.step4-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.image4-2 {
+  width: 50%;
+  margin-right: 0vw;
+  flex-shrink: 0;
+  padding-top: 0px;
+}
+
+.p4-2 {
+  width: 50%;
+  padding-left: 3vw;
+  margin: auto;
+}
+
+.step5 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.image5 {
+  width: 50%;
+  margin-left: 0vw;
+  flex-shrink: 0;
+  padding-top: 0.8vw;
+}
+
+.p5 {
+  width: 50%;
+  text-align: right;
+  padding-right: 3vw;
+  margin: auto;
+}
+
+.step6 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.image6 {
+  width: 50%;
+  margin-right: 0vw;
+  flex-shrink: 0;
+  padding-top: 0.8vw;
+}
+
+.p6 {
+  width: 50%;
+  padding-left: 3vw;
+  margin: auto;
+}
+
+.step6-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.image6-2 {
+  width: 50%;
+  margin-left: 0vw;
+  flex-shrink: 0;
+  padding-top: 0.8vw;
+}
+
+.p6-2 {
+  width: 50%;
+  text-align: right;
+  padding-right: 3vw;
+  margin: auto;
+}
+
+.step6-3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.image6-3 {
+  width: 50%;
+  margin-right: 0vw;
+  flex-shrink: 0;
+  padding-top: 0.8vw;
+}
+
+.p6-3 {
+  width: 50%;
+  padding-left: 3vw;
+  margin: auto;
+}
+.step7 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.image7 {
+  width: 50%;
+  margin-left: 0vw;
+  flex-shrink: 0;
+  padding-top: 0.8vw;
+}
+
+.p7 {
+  width: 50%;
+  text-align: right;
+  padding-right: 3vw;
+  margin: auto;
+}
+
+.step7-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.image7-2 {
+  width: 50%;
+  margin-right: 0vw;
+  flex-shrink: 0;
+  padding-top: 0px;
+}
+
+.p7-2 {
+  width: 50%;
+  padding-left: 3vw;
+  margin: auto;
+}
+
+.Reference {
+  text-align: center;
+  padding-top: 3vw;
+  margin-bottom: 12vw;
+}
+
+a:hover {
+  color: rgb(64,27,5,0.8);
+}
+
+a {
+  color: black;
+}
+
+/*---------Media queries---------*/
+
+@media (max-width:600px){
+/* This CSS is saying that when the site loads at a smaller screen, instead of showing the info-text component
+in a row, display it as a column. We're turning off Flexbox and now saying display: block*/
+.boxes {
+  display: flex;
+  align-items: center;
+}
+.box1 {
+  text-align: center;
+  margin: 0;
+ }
+.box2 {
+  text-align: center;
+  margin: 0;
+}
+.vertical-line{
+display:none;
+}
+
+}
+
+/*Notice that this pixel size is exactly one below the rule below. This rule says that once we get to
+smaller screen sizes (at which point our response columns will flow into a vertical layout), make our image
+only 40 percent of the browser height*/
+@media (max-width:1083px){
+
+  .hero-image{
+    height:40vh;
+  }
+  
+}
+/*this is a media query for our large screen sizes. It's a rule specifically for any size of browser above 1084px*/
+@media (min-width:1084px) {
+html {
+  font-size: 1vw;
+}
+.hero-image {
+    height: 100vh;
+}
+  }
