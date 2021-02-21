@@ -14,10 +14,6 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
 }
 
-.topcontainer {
-  grid-column: span 12;
-}
-
 .hero-image {
   grid-column: span 12;
   background-image: url("img/tofu.jpg");
@@ -38,7 +34,7 @@ body {
   padding-left:4em;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 3.2vw;
   line-height: 1.4em;
   letter-spacing: 0.05em;
@@ -46,22 +42,22 @@ body {
 }
 
 h2 {
-  font-family: Ubuntu;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
   font-size: 2.6vw;
-  color: #C99F67;
+  color: #BE8A46;
   margin-top: 2em;
   text-align: center;
 }
 
 h3 {
-  font-family: "Proxima Nova",sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.8vw;
   letter-spacing: 0.05em;
 }
 
 h4 {
-  font-family: "Proxima Nova",sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.8vw;
   letter-spacing: 0.05em;
   padding-top: 1.2vh;
@@ -69,7 +65,7 @@ h4 {
 }
 
 p {
-  font-family: "Proxima Nova",sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.4vw;
   letter-spacing: 0.05em;
   line-height: 1.8em;
@@ -161,8 +157,8 @@ hr {
   margin: auto;
 }
 
-
 .Reference {
+  grid-column: span 12;
   text-align: center;
   padding-top: 3vw;
   margin-bottom: 12vw;
@@ -176,35 +172,21 @@ a {
   color: black;
 }
 
-/*---------Media queries---------*/
-
-@media (max-width:600px){
-.boxes {
-  display: flex;
-  align-items: center;
-}
-.box1 {
-  text-align: center;
-  margin: 0;
- }
-.box2 {
-  text-align: center;
-  margin: 0;
-}
-.vertical-line{
-display:none;
-}
-
-}
-
-
-@media (max-width:1083px){
-
+  
+@media (min-width:1024px){
   .hero-image{
-    height:40vh;
+    height: 100vh;
+  }
+}
+
+@media (max-width:1023px) {
+html {
+  font-size: 1vw;
+  }
+  .hero-image {
+    height: 40vh;
   }
 
-@media (max-width:1023px){
   .step1, .step2, .step3, .step4, .step4-2, .step5, .step6, .step6-2, .step6-3, .step7, .step7-2
   {
     flex-direction: column;
@@ -224,13 +206,19 @@ display:none;
     margin: auto;
     width: 75%;
   }
+
+  .boxes {
+    display: flex;
+    align-items: center;
+  }
+  .box1 {
+    text-align: center;
+    margin: 0;
+   }
+  .box2 {
+    text-align: center;
+    margin: 0;
+  }
+
 }
 
-@media (min-width:1084px) {
-html {
-  font-size: 1vw;
-}
-.hero-image {
-    height: 100vh;
-}
-  }
