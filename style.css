@@ -209,6 +209,7 @@ html {
 
   .boxes {
     display: flex;
+    flex-direction: column;
     align-items: center;
   }
   .box1 {
@@ -218,6 +219,9 @@ html {
   .box2 {
     text-align: center;
     margin: 0;
+  }
+  .vertical-line{
+    display:none;
   }
 
 }
