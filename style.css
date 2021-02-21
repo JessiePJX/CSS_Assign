@@ -121,21 +121,21 @@ p {
   padding-top: 0.5vh;
 }
 
-.step1 {
+.step1, .step2, .step3, .step4, .step4-2, .step5, .step6, .step6-2, .step6-3, .step7, .step7-2{
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
 
-.image1 {
+.image1, .image3, .image4-2, .image6, .image6-3, .image7-2 {
   width: 50%;
   margin-right: 0vw;
   flex-shrink: 0;
   padding-top: 0.8vw;
 }
 
-.p1 {
+.p1, .p3, .p4-2, .p6, .p6-3, .p7-2 {
   width: 50%;
   padding-left: 3vw;
   margin: auto;
@@ -147,207 +147,20 @@ hr {
    
 }
 
-.step2 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.image2 {
+.image2, .image4, .image5, .image6-2, .image7 {
   width: 50%;
   margin-left: 0vw;
   flex-shrink: 0;
   padding-top: 0.8vw;
 }
 
-.p2 {
+.p2, .p4, .p5, .p6-2, .p7 {
   width: 50%;
   text-align: right;
   padding-right: 3vw;
   margin: auto;
 }
 
-.step3 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.image3 {
-  width: 50%;
-  margin-right: 0vw;
-  flex-shrink: 0;
-  padding-top: 0.8vw;
-}
-
-.p3 {
-  width: 50%;
-  padding-left: 3vw;
-  margin: auto;
-}
-
-.step4 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.image4 {
-  width: 50%;
-  margin-left: 0vw;
-  flex-shrink: 0;
-  padding-top: 0.8vw;
-}
-
-.p4 {
-  width: 50%;
-  text-align: right;
-  padding-right: 3vw;
-  margin: auto;
-}
-
-.step4-2 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-.image4-2 {
-  width: 50%;
-  margin-right: 0vw;
-  flex-shrink: 0;
-  padding-top: 0px;
-}
-
-.p4-2 {
-  width: 50%;
-  padding-left: 3vw;
-  margin: auto;
-}
-
-.step5 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.image5 {
-  width: 50%;
-  margin-left: 0vw;
-  flex-shrink: 0;
-  padding-top: 0.8vw;
-}
-
-.p5 {
-  width: 50%;
-  text-align: right;
-  padding-right: 3vw;
-  margin: auto;
-}
-
-.step6 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.image6 {
-  width: 50%;
-  margin-right: 0vw;
-  flex-shrink: 0;
-  padding-top: 0.8vw;
-}
-
-.p6 {
-  width: 50%;
-  padding-left: 3vw;
-  margin: auto;
-}
-
-.step6-2 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.image6-2 {
-  width: 50%;
-  margin-left: 0vw;
-  flex-shrink: 0;
-  padding-top: 0.8vw;
-}
-
-.p6-2 {
-  width: 50%;
-  text-align: right;
-  padding-right: 3vw;
-  margin: auto;
-}
-
-.step6-3 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.image6-3 {
-  width: 50%;
-  margin-right: 0vw;
-  flex-shrink: 0;
-  padding-top: 0.8vw;
-}
-
-.p6-3 {
-  width: 50%;
-  padding-left: 3vw;
-  margin: auto;
-}
-.step7 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.image7 {
-  width: 50%;
-  margin-left: 0vw;
-  flex-shrink: 0;
-  padding-top: 0.8vw;
-}
-
-.p7 {
-  width: 50%;
-  text-align: right;
-  padding-right: 3vw;
-  margin: auto;
-}
-
-.step7-2 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-.image7-2 {
-  width: 50%;
-  margin-right: 0vw;
-  flex-shrink: 0;
-  padding-top: 0px;
-}
-
-.p7-2 {
-  width: 50%;
-  padding-left: 3vw;
-  margin: auto;
-}
 
 .Reference {
   text-align: center;
@@ -366,8 +179,6 @@ a {
 /*---------Media queries---------*/
 
 @media (max-width:600px){
-/* This CSS is saying that when the site loads at a smaller screen, instead of showing the info-text component
-in a row, display it as a column. We're turning off Flexbox and now saying display: block*/
 .boxes {
   display: flex;
   align-items: center;
@@ -386,17 +197,35 @@ display:none;
 
 }
 
-/*Notice that this pixel size is exactly one below the rule below. This rule says that once we get to
-smaller screen sizes (at which point our response columns will flow into a vertical layout), make our image
-only 40 percent of the browser height*/
+
 @media (max-width:1083px){
 
   .hero-image{
     height:40vh;
   }
-  
+
+@media (max-width:1023px){
+  .step1, .step2, .step3, .step4, .step4-2, .step5, .step6, .step6-2, .step6-3, .step7, .step7-2
+  {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  p, .p1>p, .p2>p, .p3>p, .p4>p, .p4-2>p .p5>p, .p6>p, .p6-2>p, .p6-3>p, .p7>p, .p7-2>p,
+  .p1, .p2, .p3, .p4, .p4-2, .p5, .p6, .p6-2, .p6-3, .p7, .p7-2
+  {
+    width: 100%;
+    padding:0;
+    text-align: center;
+  }
+
+  .image1, .image2, .image3, .image4, .image4-2, .image5, .image6, .image6-2, .image6-3, .image7, .image7-2
+  {
+    margin: auto;
+    width: 75%;
+  }
 }
-/*this is a media query for our large screen sizes. It's a rule specifically for any size of browser above 1084px*/
+
 @media (min-width:1084px) {
 html {
   font-size: 1vw;
